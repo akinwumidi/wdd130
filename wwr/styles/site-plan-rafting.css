@@ -8,49 +8,82 @@ accent1-color : --platinum: #e6e8e6ff;
 accent2-color : --sunglow: #fdca40ff;
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+/* Lato font import from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+/* Robot font import from google fonts */
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:wght@300&display=swap');
 
-:root{
---heading-font:"Monoton",cursive;
---paragraph-font:"Roboto",sans-serif;
+:root {
+    --heading-font: 'Lato', sans-serif;
+    --paragraph-font: 'Roboto', sans-serif;
 
---primary-color:"#fffff";
---secondary-color:"#fffff";
---accent-color:"#fffff";
---additional-accent-color:"#fffff";
---navigation-background-color:"#fffff";
---navigation-link-color:"#fffff";
---navigation-hover-link-color:"#fffff";
---navigation-hover-background-color:"#fffff";
+    --primary-color: #080708ff; /* Black */
+    --secondary-color: #3772ffff; /* Deep Sky Blue */
+    --accent1-color: #e6e8e6ff; /* Platinum */
+    --accent2-color: #fdca40ff; /* Saffron Yellow */
+    
+    --navigation-background-color: #f5f5f5; /* Whitish Gray */
+    --navigation-link-color: #e0e0e0; /* Light Gray */
+    --navigation-hover-link-color: #a0a0a0; /* Medium Gray */
+    --navigation-hover-background-color: #dcdcdc; /* Gainsboro */
 }
+
+
 
 *{
     margin:0;
     padding:0;
     box-sizing:border-box;
+    
+}
+html{
+    font-size:16px;
 }
 body{
+font-family: var(--paragraph-font);
+text-align:center;
+padding:20px;
+max-width:960px;
+margin: 0 auto;
+}
+
+ header{
+background-color: var(--accent1-color);
+padding:40px 0;
+
 
 }
-h1, h2, h3, h4, h5, h6 { 
-    font-weight:normal;
- }
- header{
+ main{
 
  }
- p{
+ h1, h2, h3, h4, h5, h6 { 
+    padding: 10px 0;
+    font-family: var(--heading-font);
+    color:var(--primary-color);
+}
+p{
+     padding: 5px 0;
+     font-family: var(--paragraph-font);
 
  }
  nav{
-
+background-color:var();
+font-size:1.2rem;
+display:flex;
  }
  nav a{
-    
+   display:block;
+   color:var(--nav-link-color);
+   text-decoration:none;
+   padding:1rem; 
  }
- nav a:link{
-
- }
- nav a:visited{
-
+ nav a:link,nav a:visited{
+     color:var(--nav-link-color);
+}
+nav a:hover{
+   color:var(--nav-hover-link-color);
+   background-color:var(--nav-hover-background-color);
+}
+ footer{
+    padding:15px 0;
  }
