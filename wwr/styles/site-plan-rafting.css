@@ -1,0 +1,25 @@
+/* 
+Color pallete 
+https://coolors.co/080708-3772ff-df2935-fdca40-e6e8e6
+
+primary-color : --black: #080708ff;
+secondary-color : --blue-crayola: #3772ffff;
+accent1-color : --platinum: #e6e8e6ff;
+accent2-color : --sunglow: #fdca40ff;
+*/
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:wght@300&display=swap');
+:root{
+--heading-font:"Monoton",cursive;
+--paragraph-font:"Roboto",sans-serif;
+
+--primary-color:"#fffff";
+--secondary-color:"#fffff";
+--accent-color:"#fffff";
+--additional-accent-color:"#fffff";
+--navigation-background-color:"#fffff";
+--navigation-link-color:"#fffff";
+--navigation-hover-link-color:"#fffff";
+--navigation-hover-background-color:"#fffff";
+}
+
