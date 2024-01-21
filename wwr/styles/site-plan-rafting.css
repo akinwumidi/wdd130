@@ -7,8 +7,10 @@ secondary-color : --blue-crayola: #3772ffff;
 accent1-color : --platinum: #e6e8e6ff;
 accent2-color : --sunglow: #fdca40ff;
 */
+
 @import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:wght@300&display=swap');
+
 :root{
 --heading-font:"Monoton",cursive;
 --paragraph-font:"Roboto",sans-serif;
@@ -23,3 +25,32 @@ accent2-color : --sunglow: #fdca40ff;
 --navigation-hover-background-color:"#fffff";
 }
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+
+}
+h1, h2, h3, h4, h5, h6 { 
+    font-weight:normal;
+ }
+ header{
+
+ }
+ p{
+
+ }
+ nav{
+
+ }
+ nav a{
+    
+ }
+ nav a:link{
+
+ }
+ nav a:visited{
+
+ }
