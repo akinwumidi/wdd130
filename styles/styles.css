@@ -18,12 +18,13 @@ nav{
 }
 
 aside{
+    position:relative;
     width:20rem;
     margin-left:20px!important;
     background-color:#eee;
     color:#333;
     text-align:center;
-    position:relative;
+    
 }
 aside img{
     width:200px;
