@@ -42,7 +42,7 @@ h1 {
 aside h2 {
     position: absolute;
     top: 47px;
-    left: 150px;
+    left: 80px;
 }
 
 main img {
@@ -52,6 +52,8 @@ main img {
 }
 
 main {
+    /* display: grid; */
+    align-items: center;
     padding: 20px;
     grid-column: 2/3;
     margin: 1rem;
@@ -82,7 +84,7 @@ aside {
 }
 
 aside img {
-    width: 200px;
+    width: 100%;
     height: auto;
 }
 
