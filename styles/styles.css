@@ -1,57 +1,98 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-nav{
-    padding:20px;
+
+nav {
+    padding: 1rem;
+    background-color: steelblue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
+
+nav a {
+    display: block;
+    padding: 0.5rem;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+h1 {
+    padding-bottom: 20px;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid steelblue;
+}
+
 /* Class Selectors */
-.box{
-    margin:1rem 0;
-    border:1px solid rgba(0,0,0,.1);
-    padding:1rem;
-    background-color:#ddd;
-    color:#000;
+.box {
+    margin: 1rem 0;
+    border: 1px solid rgba(0, 0, 0, .1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
 
 }
 
-aside{
-    position:relative;
-    width:20rem;
-    margin-left:20px!important;
-    background-color:#eee;
-    color:#333;
-    text-align:center;
-    
+
+
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
 }
-aside img{
-    width:200px;
-    height:auto;
+
+main img {
+    width: 150px;
+    height: auto;
+    float: right;
 }
-aside h2{
-    position:absolute;
-    top:47px;
-    left:150px;
-}
-main img{
-    width:150px;
-    height:auto;
-    float:right;
-}
+
 main {
-    padding:20px;
-    /* float:left; */
-    /* width:20rem; */
+    padding: 20px;
+    grid-column: 2/3;
+    margin: 1rem;
+
 }
-p{
-    padding:0;
+
+p {
+    padding: 0;
 }
-footer{
-    margin-top:15px;
-    border-top:1px solid #000;
-    text-align:center;
-} 
-.clearfix{
-    clear:both;
+
+header,
+.grid,
+footer {
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    padding: 1rem;
+}
+
+aside {
+    position: relative;
+    width: 20rem;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+aside img {
+    width: 200px;
+    height: auto;
+}
+
+footer {
+    margin-top: 15px;
+    padding: 1rem 0;
+    border-top: 1px solid #000;
+    text-align: center;
+}
+
+.clearfix {
+    clear: both;
 }
