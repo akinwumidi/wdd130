@@ -63,7 +63,7 @@ label+div {
     background: var(--faded-black);
     padding: 9px;
     color: var(--faded-white-color);
-    text-align: center;
+    text-align: center !important;
 }
 
 input[type="text"],
