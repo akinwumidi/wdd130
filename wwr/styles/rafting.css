@@ -208,7 +208,7 @@ footer {
   padding-left: 40px;
 }
 
-.hero-banner h2 {
+.hero-banner h1 {
   position: relative;
   color: var(--accent1-color);
   text-transform: capitalize;
