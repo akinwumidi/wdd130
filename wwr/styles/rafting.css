@@ -12,6 +12,7 @@
 :root {
   --heading-font: "Lato", sans-serif;
   --paragraph-font: "Roboto", sans-serif;
+  --white-color: #fff;
 
   --primary-color: #3772ffff;
   /* Black */
@@ -217,7 +218,7 @@ footer {
   padding-left: 25px;
 }
 
-.hero-banner h2::before {
+.hero-banner h1::before {
   content: "";
   position: absolute;
   left: 0;
@@ -372,3 +373,72 @@ form button:hover {
 }
 
 /* ///////////////////////////////// */
+
+/* Trips page css starts here */
+.wireframe-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 1.98rem;
+  background: linear-gradient(90deg, rgba(55, 114, 255, 0.5) 0%, rgba(0, 97, 255, 0.7) 100%),
+    url('../images//bg_rafting13_1024.jpg');
+  background-size: cover;
+  color: var(--accent1-color);
+  font-weight: 700;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+.wireframe-info a {
+  text-decoration: none;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.wireframe-info button {
+  transition: all 0.3s ease;
+  cursor: pointer;
+  color: var(--white-color);
+  font-size: 0.98rem;
+  padding: 10px 15px;
+  font-weight: 600;
+  background: var(--accent2-color);
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.wireframe-info button:hover {
+  background: var(--primary-color);
+}
+
+table {
+  width: 100%;
+  margin: 20px auto;
+  border-collapse: collapse;
+  border: 2px solid #ddd;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+th {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+/* Trips page css ends here */
