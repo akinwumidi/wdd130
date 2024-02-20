@@ -1,13 +1,15 @@
+/* Lato font import from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+/* Robot font import from google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:wght@300&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Lato font import from google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
-/* Robot font import from google fonts */
-@import url("https://fonts.googleapis.com/css2?family=Monoton&family=Roboto:wght@300&display=swap");
+
 
 :root {
   --heading-font: "Lato", sans-serif;
@@ -38,7 +40,8 @@ body {
   font-family: var(--paragraph-font);
   text-align: center;
   padding: 20px;
-  max-width: 960px;
+  /* max-width: 960px; */
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -72,6 +75,31 @@ header nav a {
 
 }
 
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: 85% 15%;
+  gap: 0 2px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.grid-container-2-right {
+  display: grid;
+  grid-template-columns: 15% 85%;
+  gap: 0 2px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+.big-hero-banner {
+  width: 100%;
+}
+
+.big-hero-banner img {
+  width: 100%;
+}
 
 h1,
 h2,
@@ -149,17 +177,6 @@ article img {
   text-align: left;
 }
 
-.history p span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2.5rem;
-  font-weight: 700;
-  width: 60px;
-  height: 60px;
-  border: 1px solid var(--primary-color);
-  border-radius: 50%;
-}
 
 .adventure_images {
   display: flex;
@@ -199,7 +216,7 @@ footer {
 /* ///////////////////////////////// */
 .hero-banner {
   width: 100%;
-  height: 250px;
+  height: 350px;
   background: linear-gradient(90deg, rgba(55, 114, 255, 0.4) 0%, rgba(0, 97, 255, 0.7) 100%),
     url('../images/ad_2_rafting59_600.jpg');
   background-size: cover;
@@ -442,3 +459,9 @@ tr:hover {
 }
 
 /* Trips page css ends here */
+
+.something {
+  width: 100%;
+  background: red;
+  height: 350px;
+}
