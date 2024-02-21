@@ -36,6 +36,10 @@
   /* Gainsboro */
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--paragraph-font);
   text-align: center;
@@ -43,6 +47,15 @@ body {
   /* max-width: 960px; */
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  cursor: pointer;
+  display: inline-block;
 }
 
 header {
@@ -92,13 +105,109 @@ header nav a {
   margin: 0 auto;
 }
 
+.aside-container {
+  background: rgba(160, 160, 160, 0.2);
+  padding: 10px;
+}
+
+.aside-content {
+  background: #dcdcdc;
+  border-radius: 8px;
+  padding: 20px 0;
+  text-align: left;
+
+}
+
+.aside-content h3 {
+  margin-left: 10px;
+}
+
+.aside-content li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.aside-content li a {
+  text-decoration: none;
+  display: block;
+  padding: 10px;
+  color: var(--secondary-color);
+}
+
+.aside-links:active {
+  color: var(--white-color);
+  background: var(--primary-color);
+}
 
 .big-hero-banner {
   width: 100%;
+  height: 480px;
+  position: relative;
+}
+
+.big-hero-banner-text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px 50px;
+  z-index: 4;
+  font-size: 1.55rem;
+  background: rgba(55, 114, 255, 0.5);
+  font-weight: 700;
+  text-align: left;
+  line-height: 1.4;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: flex-start;
+  justify-content: flex-end;
+  color: var(--white-color);
+}
+
+.big-hero-banner-text h1 {
+  font-weight: 700;
+  color: var(--white-color);
+  position: relative;
+  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  font-size: 2.7rem;
+}
+
+
+.big-hero-banner-text h1::before {
+  content: "";
+
+  height: 100%;
+  position: absolute;
+  left: 0;
+  padding: 10px;
+  background-color: var(--accent2-color);
+}
+
+.big-hero-banner-text button,
+.big-hero-banner-text p {
+  display: inline-block;
+  font-weight: 500;
+}
+
+.big-hero-banner-text button {
+  background-color: var(--accent2-color);
+  color: var(--white-color);
+  font-weight: 400;
+}
+
+.big-hero-banner-text button:hover {
+  background: var(--primary-color);
 }
 
 .big-hero-banner img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
 }
 
 h1,
@@ -157,6 +266,75 @@ article img {
   width: 150px !important;
   height: auto !important;
   float: right !important;
+}
+
+.home-reels {
+  padding: 20px 0;
+
+}
+
+.home-reels h2 {
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.home-reels p {
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.reels-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reel {
+  width: 320px;
+  /* height: 420px; */
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.reel .image {
+  position: relative;
+  height: 400px;
+  width: 100%;
+}
+
+.reel .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reel-desc {
+  transition: height 0.5s ease;
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px 0;
+  height: 0;
+  background: rgba(55, 114, 255, 0.5);
+  text-align: left;
+  color: var(--white-color);
+  padding: 20px;
+
+}
+
+.reel:hover .reel-desc {
+  visibility: visible;
+  height: 190px;
+}
+
+.reel-title {
+  background: var(--accent2-color);
+  padding: 10px;
+  font-weight: 700;
+  text-transform: capitalize;
+  z-index: 10;
 }
 
 .socialmedialinks {
@@ -392,6 +570,10 @@ form button:hover {
 /* ///////////////////////////////// */
 
 /* Trips page css starts here */
+.wireframe {
+  padding: 20px 0;
+}
+
 .wireframe-info {
   display: flex;
   justify-content: center;
