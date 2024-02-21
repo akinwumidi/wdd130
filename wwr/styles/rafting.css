@@ -56,6 +56,16 @@ body {
   border-radius: 6px;
   cursor: pointer;
   display: inline-block;
+  transition: all 0.3s ease;
+  background-color: var(--accent2-color);
+  color: var(--white-color);
+  font-weight: 400;
+}
+
+.btn:hover {
+  padding: 10px 20px;
+  background: var(--primary-color);
+
 }
 
 header {
@@ -106,15 +116,16 @@ header nav a {
 }
 
 .aside-container {
-  background: rgba(160, 160, 160, 0.2);
   padding: 10px;
+  background: rgba(220, 220, 220, 0.5);
 }
 
 .aside-content {
-  background: #dcdcdc;
+  background: rgba(160, 160, 160, 0.2);
   border-radius: 8px;
   padding: 20px 0;
   text-align: left;
+  margin: 20px 0;
 
 }
 
@@ -193,7 +204,7 @@ header nav a {
   font-weight: 500;
 }
 
-.big-hero-banner-text button {
+/* .big-hero-banner-text button {
   background-color: var(--accent2-color);
   color: var(--white-color);
   font-weight: 400;
@@ -201,7 +212,7 @@ header nav a {
 
 .big-hero-banner-text button:hover {
   background: var(--primary-color);
-}
+} */
 
 .big-hero-banner img {
   width: 100%;
@@ -336,6 +347,8 @@ article img {
   text-transform: capitalize;
   z-index: 10;
 }
+
+
 
 .socialmedialinks {
   text-decoration: none;
@@ -497,9 +510,9 @@ label {
   margin-bottom: 5px;
 }
 
-input[type="text"],
-input[type="email"],
-textarea {
+.quick-contact input[type="text"],
+.quick-contact input[type="email"],
+.quick-contact textarea {
   width: 100%;
   padding: 10px;
   margin-bottom: 15px;
@@ -548,9 +561,39 @@ input[type="checkbox"] {
   margin-right: 5px;
 }
 
+/* CTA Section starts here */
+.cta p {
+  font-weight: 500;
+  font-size: 2rem;
+}
+
+.cta label {
+  font-weight: 200;
+  font-size: 1.2rem;
+}
+
+.cta div {
+  display: flex;
+  justify-content: center;
+  margin: 25px;
+}
+
+.cta div input {
+  border: none;
+  outline: none;
+  padding: 10px;
+  min-width: 200px;
+  border-bottom: 2px solid var(--accent2-color);
+  border-left: 2px solid var(--accent2-color);
+  border-radius: 6px;
+  margin-left: 8px;
+}
+
 .newsletter-cta label {
   display: inline-block;
 }
+
+/* CTA Section ends here */
 
 form button {
   width: 100%;
@@ -572,6 +615,10 @@ form button:hover {
 /* Trips page css starts here */
 .wireframe {
   padding: 20px 0;
+}
+
+.wireframe .title {
+  margin-bottom: 15px;
 }
 
 .wireframe-info {
